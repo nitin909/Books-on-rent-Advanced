@@ -1,0 +1,2 @@
+D:/scrren_cart/scrren_cart/android/app/.cxx/Debug/3v5g4q4n/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/scrren_cart/scrren_cart/android/app/.cxx/Debug/3v5g4q4n/armeabi-v7a/CMakeFiles/rebuild_cache.dir
