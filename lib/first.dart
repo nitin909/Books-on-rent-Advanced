@@ -12,7 +12,7 @@ import 'optionspage.dart';
 import 'appcolor.dart';
 import 'appdata_modal.dart';
 
-// ✅ CHATBOT IMPORTS
+// CHATBOT IMPORTS
 import 'chat_bot_screen.dart';
 import 'animated_chat_button.dart';
 
@@ -106,7 +106,7 @@ class _HomePageState extends State {
           ),
         ),
 
-        // Pic Title/ Books Name
+        // Pic Title / Books Name
         SizedBox(
           width: 175,
           child: Center(
@@ -158,7 +158,6 @@ class _HomePageState extends State {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
-              // Row of Profile Pic And Name
               children: [
                 Container(
                   padding: const EdgeInsets.only(top: 8, left: 0),
@@ -236,10 +235,8 @@ class _HomePageState extends State {
                           itemCount: AppdataModal.listEducation.length,
                           itemBuilder: (context, index) {
                             return sectionCards(
-                              card1Name: AppdataModal.listEducation[index]
-                                  ['cardname'],
-                              card1Pic: AppdataModal.listEducation[index]
-                                  ['cardpic'],
+                              card1Name: AppdataModal.listEducation[index]['cardname'],
+                              card1Pic: AppdataModal.listEducation[index]['cardpic'],
                               index: index,
                               listdata: AppdataModal.listEducation,
                             );
@@ -261,18 +258,13 @@ class _HomePageState extends State {
                         child: ListView.builder(
                           shrinkWrap: true,
                           scrollDirection: Axis.horizontal,
-                          itemCount: AppdataModal.listBookSections[0]
-                                  ['listBusiness']
-                              .length,
+                          itemCount: AppdataModal.listBookSections[0]['listBusiness'].length,
                           itemBuilder: (context, index) {
                             return sectionCards(
-                              card1Name: AppdataModal.listBookSections[0]
-                                  ['listBusiness'][index]['cardname'],
-                              card1Pic: AppdataModal.listBookSections[0]
-                                  ['listBusiness'][index]['cardpic'],
+                              card1Name: AppdataModal.listBookSections[0]['listBusiness'][index]['cardname'],
+                              card1Pic: AppdataModal.listBookSections[0]['listBusiness'][index]['cardpic'],
                               index: index,
-                              listdata: AppdataModal.listBookSections[0]
-                                  ['listBusiness'],
+                              listdata: AppdataModal.listBookSections[0]['listBusiness'],
                             );
                           },
                         ),
@@ -292,18 +284,13 @@ class _HomePageState extends State {
                         child: ListView.builder(
                           shrinkWrap: true,
                           scrollDirection: Axis.horizontal,
-                          itemCount: AppdataModal.listBookSections[0]
-                                  ['listChildrens']
-                              .length,
+                          itemCount: AppdataModal.listBookSections[0]['listChildrens'].length,
                           itemBuilder: (context, index) {
                             return sectionCards(
-                              card1Name: AppdataModal.listBookSections[0]
-                                  ['listChildrens'][index]['cardname'],
-                              card1Pic: AppdataModal.listBookSections[0]
-                                  ['listChildrens'][index]['cardpic'],
+                              card1Name: AppdataModal.listBookSections[0]['listChildrens'][index]['cardname'],
+                              card1Pic: AppdataModal.listBookSections[0]['listChildrens'][index]['cardpic'],
                               index: index,
-                              listdata: AppdataModal.listBookSections[0]
-                                  ['listChildrens'],
+                              listdata: AppdataModal.listBookSections[0]['listChildrens'],
                             );
                           },
                         ),
@@ -323,18 +310,13 @@ class _HomePageState extends State {
                         child: ListView.builder(
                           shrinkWrap: true,
                           scrollDirection: Axis.horizontal,
-                          itemCount: AppdataModal.listBookSections[0]
-                                  ['listPoetry']
-                              .length,
+                          itemCount: AppdataModal.listBookSections[0]['listPoetry'].length,
                           itemBuilder: (context, index) {
                             return sectionCards(
-                              card1Name: AppdataModal.listBookSections[0]
-                                  ['listPoetry'][index]['cardname'],
-                              card1Pic: AppdataModal.listBookSections[0]
-                                  ['listPoetry'][index]['cardpic'],
+                              card1Name: AppdataModal.listBookSections[0]['listPoetry'][index]['cardname'],
+                              card1Pic: AppdataModal.listBookSections[0]['listPoetry'][index]['cardpic'],
                               index: index,
-                              listdata: AppdataModal.listBookSections[0]
-                                  ['listPoetry'],
+                              listdata: AppdataModal.listBookSections[0]['listPoetry'],
                             );
                           },
                         ),
@@ -348,7 +330,7 @@ class _HomePageState extends State {
         ),
       ),
 
-      // ✅ ADD THIS ANIMATED HELP BUTTON
+      // ANIMATED HELP BUTTON
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       floatingActionButton: AnimatedChatButton(
         onPressed: () {

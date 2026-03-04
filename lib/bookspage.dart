@@ -152,7 +152,7 @@ class _BooksPageState extends State<BooksPage> {
                                 alignment:
                                     AlignmentDirectional.topEnd,
                                 children: [
-                                  Image.asset(
+                                  Image.network(
                                     mapBooks!['books'][index]
                                         ['cardpic'],
                                   ),

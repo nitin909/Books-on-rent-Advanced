@@ -24,7 +24,6 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   TextEditingController emailController = TextEditingController();
-
   TextEditingController passwordController = TextEditingController();
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
   bool _isPasswordVisible = false;
@@ -56,9 +55,7 @@ class _LoginPageState extends State<LoginPage> {
                   children: <Widget>[
                     Column(
                       children: <Widget>[
-                        const SizedBox(
-                          height: 20,
-                        ),
+                        const SizedBox(height: 20),
                         Text(
                           "Login to your account",
                           style: GoogleFonts.quicksand(
@@ -96,9 +93,7 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                             ),
                           ),
-                          const SizedBox(
-                            height: 30,
-                          ),
+                          const SizedBox(height: 30),
                           TextField(
                             controller: passwordController,
                             obscureText: !_isPasswordVisible,
@@ -176,9 +171,7 @@ class _LoginPageState extends State<LoginPage> {
                         child: const Center(
                           child: Text(
                             "Login",
-                            style: TextStyle(
-                              fontSize: 25,
-                            ),
+                            style: TextStyle(fontSize: 25),
                           ),
                         ),
                       ),
@@ -211,18 +204,8 @@ class _LoginPageState extends State<LoginPage> {
                             ),
                           ),
                         ),
-                        
                       ],
                     ),
-                    // Container(
-                    //   padding: EdgeInsets.only(top: 100),
-                    //   height: 200,
-                    //   decoration: BoxDecoration(
-                    //     image: DecorationImage(
-                    //         //image: AssetImage("assets/background.png"),
-                    //         fit: BoxFit.fitHeight),
-                    //   ),
-                    // )
                   ],
                 ))
               ],
@@ -230,7 +213,6 @@ class _LoginPageState extends State<LoginPage> {
           ),
         ],
       ),
-      
     );
   }
 }
@@ -244,26 +226,20 @@ Widget inputFile({required String label, bool obscureText = false}) {
         style: const TextStyle(
             fontSize: 15, fontWeight: FontWeight.w400, color: Colors.black87),
       ),
-      const SizedBox(
-        height: 5,
-      ),
+      const SizedBox(height: 5),
       TextField(
         obscureText: obscureText,
         decoration: const InputDecoration(
             contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
             enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(
-                color: Colors.grey,
-              ),
+              borderSide: BorderSide(color: Colors.grey),
             ),
             border: OutlineInputBorder(
-                borderSide: BorderSide(
-              color: Colors.grey,
-            ))),
+                borderSide: BorderSide(color: Colors.grey))),
       ),
-      const SizedBox(
-        height: 10,
-      )
+      const SizedBox(height: 10)
     ],
   );
 }
+
+

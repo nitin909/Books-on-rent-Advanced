@@ -45,8 +45,14 @@ import './login.dart';
 //chatbot page
 import 'chat_bot_screen.dart';
 
+//cloudinary file
+import 'package:cloudinary_url_gen/cloudinary.dart';
+import 'package:cloudinary_flutter/cloudinary_context.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Firebase initialization
   await Firebase.initializeApp(
     options: const FirebaseOptions(
         apiKey: "AIzaSyB6Rf2GIBi1glIvkluOmRCf5k1A5xyT2_E",
@@ -55,6 +61,10 @@ void main() async {
         projectId: "test-a7076",
         storageBucket: "test-a7076.firebasestorage.app"),
   );
+
+  // Cloudinary initialization
+  CloudinaryContext.cloudinary =
+      Cloudinary.fromCloudName(cloudName: 'dduaiju3n');
 
   runApp(const MainApp());
 }

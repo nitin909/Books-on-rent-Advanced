@@ -322,7 +322,7 @@ class _SearchExampleState extends State<SearchExample> {
                 final item = displayedItems[index];
                 return ListTile(
                   leading: item['cardpic'] != null && item['cardpic'].isNotEmpty
-                      ? Image.asset(
+                      ? Image.network(
                           item['cardpic'],
                           width: 50,
                           height: 50,

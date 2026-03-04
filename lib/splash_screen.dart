@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(), // Set SplashScreen as the initial screen
+      home: SplashScreen(),
     );
   }
 }
@@ -35,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(const Duration(seconds: 5), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) =>  HomePage1()), // to HomeScreen
+        MaterialPageRoute(builder: (context) => HomePage1()),
       );
     });
   }
@@ -72,9 +72,9 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
               const SizedBox(height: 20),
               const CircularProgressIndicator(
-                color: Colors.white, // Change color ii need
+                color: Colors.white,
               ),
-               Text(
+              Text(
                 'On Rent',
                 style: TextStyle(
                   color: Colors.white,

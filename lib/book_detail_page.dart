@@ -87,7 +87,7 @@ class _DetailpageState extends State<Detailpage> {
                       child: SizedBox(
                         height: 350,
                         width: 500,
-                        child: Image.asset(
+                        child: Image.network(
                           widget.listbook['cardpic'],
                           fit: BoxFit.cover,
                         ),

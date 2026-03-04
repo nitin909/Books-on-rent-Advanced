@@ -101,7 +101,7 @@ class _ShoppingBagState extends State<ShoppingBag> {
             margin: const EdgeInsets.all(10),
             height: 100,
             width: 100,
-            child: Image.asset(
+            child: Image.network(
               AppdataModal.listcart[index]['cardpic'],
               fit: BoxFit.cover,
               errorBuilder: (context, error, stackTrace) =>

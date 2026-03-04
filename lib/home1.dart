@@ -11,7 +11,6 @@ import 'book_detail_page.dart';
 import './home.dart';
 
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-// import 'package:firebase_core/firebase_core.dart';
 import "package:flutter/material.dart";
 import "package:google_fonts/google_fonts.dart";
 
@@ -19,11 +18,7 @@ import 'optionspage.dart';
 import 'book_detail_page.dart';
 import 'appcolor.dart';
 import 'order_details_page.dart';
-//import 'shopping_bag.dart';
 import 'appdata_modal.dart';
-//import './p.dart';
-
-
 
 class Mynavbar extends StatefulWidget {
   const Mynavbar({super.key});
@@ -40,7 +35,7 @@ class _navbarState extends State {
   List screens = [
     const HomePage(),
     const ListViewAnimation(),
-    const  OrderDetailsPage(),
+    const OrderDetailsPage(),
     const home(),
   ];
 
@@ -55,8 +50,7 @@ class _navbarState extends State {
         color: Colors.blue,
         index: _selectedIndex,
         items: [
-           // ignore: prefer_const_constructors
-           Icon(
+          Icon(
             Icons.home,
             color: Colors.white,
             size: 30,
@@ -71,7 +65,6 @@ class _navbarState extends State {
             color: Colors.white,
             size: 30,
           ),
-          
           const Icon(
             Icons.person,
             color: Colors.white,

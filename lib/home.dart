@@ -119,7 +119,7 @@ class _homeState extends State<home> {
         ],
       ),
 
-      // ✅ CHATBOT BUTTON ADDED HERE
+      // CHATBOT BUTTON
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.deepPurple,
         child: const Icon(Icons.chat, color: Colors.white),
@@ -167,10 +167,7 @@ class _homeState extends State<home> {
 
               const SizedBox(height: 20),
 
-              // First Name
               buildTextField(firstnameController, "First Name"),
-
-              // Last Name
               buildTextField(lastnameController, "Last Name"),
 
               // DOB
@@ -212,13 +209,8 @@ class _homeState extends State<home> {
                 ),
               ),
 
-              // Mobile
               buildTextField(mobController, "Mobile No."),
-
-              // Address
               buildTextField(addressController, "Address"),
-
-              // Pin
               buildTextField(pinController, "Pincode"),
 
               const SizedBox(height: 10),
@@ -288,7 +280,6 @@ class _homeState extends State<home> {
     );
   }
 
-  // Reusable TextField Widget
   Widget buildTextField(TextEditingController controller, String hint) {
     return Padding(
       padding: const EdgeInsets.all(18.0),

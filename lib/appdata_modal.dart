@@ -240,35 +240,35 @@ class AppdataModal {
   static List listEngineering = [
    {
   'cardname': 'Radiation and Microwave Theory',
-  'cardpic': "assets/images/educational/engineeringbooks/rmt.jpg",
+  'cardpic': "https://res.cloudinary.com/dduaiju3n/image/upload/v1772607317/rmt_yuw3br.jpg",
   'price': 5,
   'description':
       'Comprehensive study of electromagnetic wave propagation, antennas, microwave components, and transmission line theory for modern communication systems.'
 },
 {
   'cardname': 'Cloud Computing',
-  'cardpic': "assets/images/educational/engineeringbooks/cc.jpg",
+  'cardpic': "https://res.cloudinary.com/dduaiju3n/image/upload/v1772607318/cc_vljkfn.jpg",
   'price': 5,
   'description':
       'Explains cloud architecture, virtualization, and service models (IaaS, PaaS, SaaS), with practical insights into AWS, Google Cloud, and Azure platforms.'
 },
 {
   'cardname': 'Data Mining',
-  'cardpic': "assets/images/educational/engineeringbooks/dm.jpg",
+  'cardpic': "https://res.cloudinary.com/dduaiju3n/image/upload/v1772607317/dm_bckbbj.jpg",
   'price': 5,
   'description':
       'Covers data preprocessing, clustering, classification, and association rule mining techniques for extracting useful patterns from large datasets.'
 },
 {
   'cardname': 'Modernized IoT',
-  'cardpic': "assets/images/educational/engineeringbooks/miot.jpg",
+  'cardpic': "https://res.cloudinary.com/dduaiju3n/image/upload/v1772607318/miot_wguc0g.jpg",
   'price': 5,
   'description':
       'Focuses on modern IoT architecture, sensor networks, cloud integration, and smart applications using embedded systems and real-time analytics.'
 },
 {
   'cardname': 'VLSI Design and Technology',
-  'cardpic': "assets/images/educational/engineeringbooks/vdt.jpg",
+  'cardpic': "https://res.cloudinary.com/dduaiju3n/image/upload/v1772607318/vdt_edwqxe.jpg",
   'price': 5,
   'description':
       'A complete overview of CMOS technology, chip design flow, fabrication processes, and optimization techniques used in advanced integrated circuits.'
